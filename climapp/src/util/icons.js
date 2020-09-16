@@ -3,8 +3,9 @@ export const icons = {
   cloudy: 'cloud-sun',
   clearday: 'cloud',
   partlycloudyday: 'cloud-sun',
+  partlycloudynight: 'cloud-moon',
+  clearday: 'sun',
   clearnight: 'moon',
   fog: 'smog',
-  partlycloudynight: 'cloud-moon',
   'snow': 'snowflake',
 };

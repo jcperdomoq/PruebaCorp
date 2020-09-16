@@ -66,7 +66,7 @@ class SearchPage extends Component {
         style={styles.container}>
         <StatusBar barStyle="light-content" />
         <SafeAreaView style={styles.container}>
-          <Text style={styles.title}>Climapp</Text>
+          <Text style={styles.title}>WeatherApp</Text>
           <View style={styles.containerInput}>
             <Icon name="search" size={24} color="#DCDCDC" style={styles.iconStyle} />
             <TextInput
