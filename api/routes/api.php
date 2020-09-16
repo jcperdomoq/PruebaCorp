@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\DarkSkyController;
 use App\Http\Controllers\MapBoxController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/map-box/{city}', [MapBoxController::class,'coordinatesCity']);
 
 // obtener  clima de las ci
-Route::get('/weather/{lact}/{long}', [MapBoxController::class,'getWeather']);
+Route::get('/weather/{lact}/{long}', [DarkSkyController::class,'getWeather']);

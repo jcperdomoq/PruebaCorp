@@ -15,9 +15,4 @@ class MapBoxController extends Controller
         $token = 'access_token='.env('TOKEN_MAPBOX','orderd');
         return Http::get($url.$token)->json();
     }
-
-    public function getWeather($lact,$long){
-        $url = env('URLDARK').$lact.','.$long;
-        return Http::get($url)->json();
-    }
 }
