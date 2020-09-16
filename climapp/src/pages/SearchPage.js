@@ -52,8 +52,8 @@ class SearchPage extends Component {
   renderLocation = (item, index) => {
     const isLast = index == this.state.locations.length - 1;
     return (
-      <TouchableOpacity activeOpacity={1} onPress={() => this.onItemSelect(item)} style={{height: 50, marginLeft: 20, borderColor: '#6A6868', borderBottomWidth: isLast ? 0 : 1, justifyContent: 'center'}}>
-        <Text allowFontScaling={false} style={{fontSize: 18, color: 'white'}}>{item.place}</Text>
+      <TouchableOpacity activeOpacity={1} onPress={() => this.onItemSelect(item)} style={{height: 50, marginLeft: 20, paddingRight: 20, borderColor: '#6A6868', borderBottomWidth: isLast ? 0 : 1, justifyContent: 'center'}}>
+        <Text numberOfLines={2} allowFontScaling={false} style={{fontSize: 18, color: 'white'}}>{item.place}</Text>
       </TouchableOpacity>
     );
   }
