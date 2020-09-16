@@ -1,6 +1,7 @@
 #!/bin/bash
 cd /var/www/laravel
 npm install
+composer install
 chmod 777 -R /var/www/laravel/storage/
 service cron force-reload
 service cron start
